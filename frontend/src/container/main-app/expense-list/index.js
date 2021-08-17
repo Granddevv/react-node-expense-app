@@ -34,16 +34,13 @@ export default function ExpenseList(props) {
   }
 
   function handleEdit(item) {
-    console.log("handle edit", item);
     setEditModal(true);
     setExpenseData(item);
   }
 
   async function handleDel(item) {
-    console.log("handle delete", item);
     try {
       const result = await deleteAPI(`/expense/${item._id}`);
-      console.log("result -- ", result);
       if (result?.data?.success) {
         dispatch({
           type: DELETE_EXPENSE,

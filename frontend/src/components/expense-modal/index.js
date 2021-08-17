@@ -27,9 +27,7 @@ export default function ExpenseModal(props) {
     if (type === EXPENSE_NEW) {
       try {
         const result = await post("/expense", formVal);
-        console.log("create expense result", result);
         if (result?.data?.success) {
-          console.log("add expense dispatch", result.data.data);
           dispatch({
             type: ADD_EXPENSE,
             payload: result.data.data,
@@ -41,9 +39,7 @@ export default function ExpenseModal(props) {
     } else {
       try {
         const result = await put(`/expense/${data._id}`, formVal);
-        console.log("create expense result", result);
         if (result?.data?.success) {
-          console.log("add expense dispatch", result.data.data);
           dispatch({
             type: UPDATE_EXPENSE,
             payload: {
