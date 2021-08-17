@@ -1,0 +1,29 @@
+.line-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.line-input input {
+  padding: 10px 5px;
+  margin-top: 5px;
+  border: 1px solid #c1c0c0;
+  outline: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-container .btn-create {
+  cursor: pointer;
+  padding: 10px 16px;
+  background: #f47575;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.modal-container {
+  min-width: 400px;
+}

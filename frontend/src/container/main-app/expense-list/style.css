@@ -1,0 +1,28 @@
+.btn-edit {
+  cursor: pointer;
+  padding: 10px 16px;
+  background: #75dcf4;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-delete {
+  cursor: pointer;
+  padding: 10px 16px;
+  background: #90f198;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.list-container {
+  margin-top: 20px;
+}
+
+.list-container table {
+  width: 100%;
+}
+
+.action-container {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,26 @@
+.header-container h1 {
+  margin: 0;
+}
+
+.header-container .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-container .header-wrapper div {
+  margin: 5px;
+}
+
+.header-container .header-wrapper div h4 {
+  margin: 5px;
+  color: #6c6c6c;
+}
+
+.header-container .header-wrapper .btn-new {
+  cursor: pointer;
+  padding: 10px 16px;
+  background: #f47575;
+  color: #fff;
+  border: 1px solid #fff;
+}
